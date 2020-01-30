@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
-const ContactPage = () => (
+const PropertyMaintenancePage = () => (
   <Layout>
     <SEO
       title="Property maintenance | ACDC Electricians"
@@ -29,4 +29,4 @@ const ContactPage = () => (
   </Layout>
 )
 
-export default ContactPage
+export default PropertyMaintenancePage

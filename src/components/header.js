@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import HeaderImage from "../images/header.jpg"
-import Skyline from "../images/skyline.jpg"
 
 const Header = ({ siteTitle }) => (
   <header
