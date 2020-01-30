@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "final-form": "^4.18.7",
     "gatsby": "^2.19.5",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-advanced-sitemap": "^1.4.5",
@@ -14,10 +15,15 @@
     "gatsby-plugin-sharp": "^2.4.0",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
+    "install": "^0.13.0",
+    "npm": "^6.13.7",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-final-form": "^6.3.5",
     "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {

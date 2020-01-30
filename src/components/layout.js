@@ -16,6 +16,7 @@ import Menu from "./menu"
 import "./layout.css"
 
 const MainContainer = styled.main`
+  position: relative;
   min-height: 60vh;
   text-align: justify;
   padding: 2rem 5rem;
