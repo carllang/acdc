@@ -3,6 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
+import image1 from "../images/gallery/cetteup-Geh-r9A4RBg-unsplash.jpg"
+import image2 from "../images/gallery/henry-co-3coKbdfnAFg-unsplash.jpg"
 
 const ContactPage = () => (
   <Layout>
@@ -18,8 +20,15 @@ const ContactPage = () => (
       make a type specimen book.
     </p>
     <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <h2>Electrical services</h2>
-      <h2>Property maintenance</h2>
+      <div style={{ width: "48%" }}>
+        <h2>Electrical services</h2>
+        <img src={image1} alt="image1" />
+      </div>
+
+      <div style={{ width: "48%" }}>
+        <h2>Property maintenance</h2>
+        <img src={image2} alt="image2" />
+      </div>
     </div>
   </Layout>
 )

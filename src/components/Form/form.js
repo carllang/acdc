@@ -94,13 +94,6 @@ class ContactForm extends React.Component {
               <button type="submit" disabled={submitting}>
                 Send
               </button>
-              <button
-                type="button"
-                onClick={form.reset}
-                disabled={submitting || pristine}
-              >
-                Reset
-              </button>
             </div>
           </form>
         )}

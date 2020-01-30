@@ -9,6 +9,8 @@ const StyledLink = styled(Link)`
   transition: background-color 0.5s ease-out, color 0.5s ease-out;
   background-color: #ffffff;
   color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
   &:hover {
     color: #ffffff;
     background-color: #000000;
@@ -22,8 +24,8 @@ const MenuContainer = styled.div`
   margin: 0;
   background-color: #ffffff;
   cursor: pointer;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
 `
 
 const activeStyle = {

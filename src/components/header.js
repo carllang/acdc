@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "../images/ACDC_LOGO_RGB-01.png"
+import HeaderImage from "../images/header.jpg"
 import Skyline from "../images/skyline.jpg"
 
 const Header = ({ siteTitle }) => (
@@ -17,11 +17,8 @@ const Header = ({ siteTitle }) => (
         display: `flex`,
       }}
     >
-      <div style={{ width: "30%" }}>
-        <img src={Logo} alt="Header" />
-      </div>
-      <div style={{ width: "70%" }}>
-        <img src={Skyline} alt="Skyline" />
+      <div style={{ width: "100%" }}>
+        <img src={HeaderImage} alt="Header" style={{ marginBottom: "0" }} />
       </div>
     </div>
   </header>
