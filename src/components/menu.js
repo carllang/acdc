@@ -26,6 +26,9 @@ const MenuContainer = styled.div`
   cursor: pointer;
   border-top: 4px solid #000000;
   border-bottom: 4px solid #000000;
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
+    display: none;
+  }
 `
 
 const activeStyle = {

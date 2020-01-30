@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./footer"
 import Header from "./header"
 import Menu from "./menu"
+import MobileMenu from "./mobileMenu"
 
 import "./layout.css"
 
@@ -38,6 +39,15 @@ const MainContainer = styled.main`
     rgba(0, 0, 0, 0.65) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
+    padding: 1rem 1rem;
+  }
+`
+const LayoutContainer = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
 `
 
 const Layout = ({ children }) => {
@@ -53,17 +63,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <MobileMenu />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem`,
-        }}
-      >
+      <LayoutContainer>
         <Menu />
+
         <MainContainer>{children}</MainContainer>
-      </div>
+      </LayoutContainer>
       <Footer />
     </>
   )
